@@ -3,7 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terre d'Or - Inspiring Every Child</title>
+    <title>Terre d'Or School | Top Creche, Preschool & Primary School in  Lagos</title>
+    <meta name="description" content="Terre d'Or School in Lagos state offers quality creche, preschool and primary education. We nurture young minds with Christian values and holistic development programs.">
+    <meta name="keywords" content="best school in Lagos, best school in Egbeda, best school in Alimosho,  creche in Lagos, preschool in Egbeda, primary school in Lagos, quality education Lagos, Terre d'Or School, early childhood education Lagos">
+    <meta name="author" content="Terre d'Or School">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Terre d'Or School | Top Creche, Preschool & Primary School in Egbeda, Lagos">
+    <meta property="og:description" content="Quality creche, preschool and primary education in Egbeda, Lagos. Nurturing young minds with Christian values and holistic development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://terredorschool.com">
+    <meta property="og:image" content="https://terredorschool.com/images/logo.png">
+    <meta property="og:site_name" content="Terre d'Or School">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Terre d'Or School | Top Creche, Preschool & Primary School in Egbeda, Lagos">
+    <meta name="twitter:description" content="Quality creche, preschool and primary education in Egbeda, Lagos. Nurturing young minds with Christian values and holistic development.">
+    <meta name="twitter:image" content="https://terredorschool.com/images/logo.png">
+    
+    <!-- Geo and Business Meta Tags -->
+    <meta name="geo.region" content="NG-LA">
+    <meta name="geo.placename" content="Egbeda, Lagos">
+    <meta name="geo.position" content="6.6114;3.2767">
+    <meta name="ICBM" content="6.6114, 3.2767">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://terredorschool.com">
+
     <link rel="icon" type="image/png" href="/images/favicon.png" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -54,6 +83,14 @@
         .hover-scale:hover {
             transform: scale(1.03);
         }
+
+       .drop-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+        }
+        .drop-shadow-md {
+            text-shadow: 0 4px 8px rgba(0,0,0,0.8);
+        }
+
         .text-3d-gray {
             text-shadow: 
                 2px 2px 4px rgba(0, 0, 0, 0.5), /* Black shadow for better contrast */
@@ -118,7 +155,7 @@
                     <a href="#home" class="text-gray-800 hover:text-red-700 px-3 py-2 font-medium">Home</a>
                     <a href="#about" class="text-gray-800 hover:text-red-700 px-3 py-2 font-medium">About</a>
                     <a href="#services" class="text-gray-800 hover:text-red-700 px-3 py-2 font-medium">Services</a>
-                    <a href="#notice" class="text-gray-800 hover:text-red-700 px-3 py-2 font-medium">Notice Board</a>
+                    <a href="index.php#notice" class="text-gray-800 hover:text-red-700 px-3 py-2 font-medium">Notice Board</a>
                     <a href="#gallery" class="text-gray-800 hover:text-red-700 px-3 py-2 font-medium">Gallery</a>
                     <a href="#faq" class="text-gray-800 hover:text-red-700 px-3 py-2 font-medium">FAQs</a>
                     <a href="#contact" class="text-gray-800 hover:text-red-700 px-3 py-2 font-medium">Contact</a>
@@ -141,9 +178,9 @@
                 <a href="#home" class="block px-3 py-2 text-gray-800 hover:text-primary font-medium">Home</a>
                 <a href="#about" class="block px-3 py-2 text-gray-800 hover:text-primary font-medium">About</a>
                 <a href="#services" class="block px-3 py-2 text-gray-800 hover:text-primary font-medium">Services</a>
-                <a href="#notice" class="block px-3 py-2 text-gray-800 hover:text-primary font-medium">Notice Board</a>
+                <a href="index.php#notice" class="block px-3 py-2 text-gray-800 hover:text-primary font-medium">Notice Board</a>
                 <a href="#gallery" class="block px-3 py-2 text-gray-800 hover:text-primary font-medium">Gallery</a>
-                <a href="#faq" class="block px-3 py-2 text-gray-800 hover:text-primary font-medium">FAQ</a>
+                <a href="#faq" class="block px-3 py-2 text-gray-800 hover:text-primary font-medium">FAQs</a>
                 <a href="#contact" class="block px-3 py-2 text-gray-800 hover:text-primary font-medium">Contact</a>
             </div>
         </div>
@@ -151,26 +188,26 @@
 
 <!-- Hero Section with Image Backgrounds -->
 <section id="home" class="pt-20">
-<!-- In your hero section, update the x-data -->
+
 <div x-data="{
     currentSlide: 0,
     slides: [
         { 
             title: 'Inspiring Every Child', 
             subtitle: 'Nurturing young minds for a brighter future', 
-            bg: 'bg-gradient-to-r from-yellow-100 to-primary',
-            image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+           
+            image: 'images/hero-2.jpg'
         },
         { 
             title: 'Quality Education', 
             subtitle: 'Excellence in teaching and learning', 
-            bg: 'bg-gradient-to-r from-blue-100 to-primary',
-            image: 'images/hero-2.jpg'
+           
+            image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
         },
         { 
             title: 'Holistic Development', 
             subtitle: 'Balancing academics with extracurricular activities', 
-            bg: 'bg-gradient-to-r from-green-100 to-primary',
+            
             image: 'images/hero-3.jpg'
         }
     ],
@@ -202,12 +239,12 @@
                     
                     <!-- Content -->
                     <div class="relative h-full flex items-center justify-center text-center px-4">
-                        <div class="max-w-3xl mx-auto fade-in">
-                            <h1 class="text-4xl md:text-6xl font-bold text-dark mb-4 text-3d-gray" x-text="slide.title"></h1>
-                            <p class="text-xl md:text-2xl text-blue-800 mb-8 text-3d-gray-sm" x-text="slide.subtitle"></p>
+                        <div class="max-w-3xl mx-auto fade-in bg-black bg-opacity-60 p-8 rounded-lg ">
+                            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-md" x-text="slide.title"></h1>
+                            <p class="text-xl md:text-2xl text-white mb-8 drop-shadow" x-text="slide.subtitle"></p>
                             <div class="space-x-4">
-                                <a href="#contact" class="inline-block bg-red-600 text-white px-6 py-3 rounded-lg font-medium shadow-lg hover:bg-blue-500 transition duration-300">Enroll Now</a>
-                                <a href="#about" class="inline-block border-2 border-red-600 text-red-600 px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-primary transition duration-300">Learn More</a>
+                                <a href="#contact" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium shadow-lg hover:bg-blue-700 transition duration-300">Enroll Now</a>
+                                <a href="#about" class="inline-block border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-gray-900 transition duration-300">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -552,52 +589,56 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-3d-gray">Contact Us</h2>
-                <div class="w-20 h-1 bg-primary mx-auto"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto mt-4">We'd love to hear from you. Reach out for inquiries or to schedule a visit.</p>
-            </div>
-            
-            <div class="flex flex-col md:flex-row gap-12">
-                <div class="md:w-1/2">
-                    <form class="space-y-6 " id="contactForm" novalidate>
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
-                            <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" placeholder="Your name">
-                        </div>
-                        
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-                            <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" placeholder="your@email.com">
-                        </div>
-                        
-                        <div>
-                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" placeholder="Mobile Number">
-                        </div>
-                        
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message</label>
-                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" placeholder="How can we help you?"></textarea>
-                        </div>
-                       
-                       
-                        <!-- CSRF -->
-                        <input type="hidden" name="csrf_token" id="contactCsrfToken" value="">
-                        <div style="position: absolute; left: -9999px;">
-                            <label for="website">Leave this field empty</label>
-                            <input type="text" id="website" name="website">
-                        </div>
+   <section id="contact" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-3d-gray">Contact Us</h2>
+            <div class="w-20 h-1 bg-primary mx-auto"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto mt-4">We'd love to hear from you. Reach out for inquiries or to schedule a visit.</p>
+        </div>
+        
+        <div class="flex flex-col md:flex-row gap-12">
+            <div class="md:w-1/2">
+                <form class="space-y-6" id="contactForm" novalidate>
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" placeholder="Your name">
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" placeholder="your@email.com">
+                    </div>
+                    
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" placeholder="Mobile Number">
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Your Message *</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" placeholder="How can we help you?"></textarea>
+                    </div>
+                   
+                    <!-- CSRF Token -->
+                    <input type="hidden" name="csrf_token" id="contactCsrfToken" value="">
+                    
+                    <!-- Honeypot Field -->
+                    <div style="position: absolute; left: -9999px;">
+                        <label for="website">Leave this field empty</label>
+                        <input type="text" id="website" name="website">
+                    </div>
 
-                        <div id="formMessage" class="hidden my-4 p-4 rounded"></div>
-                        
-                        <div>
-                            <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition duration-300">Send Message</button>
-                        </div>
-                    </form>
-                </div>
+                    <!-- Form Message Container -->
+                    <div id="formMessage" class="hidden p-4 rounded-lg"></div>
+                    
+                    <div>
+                        <button type="submit" id="submitBtn" class="w-full bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-opacity-90 transition duration-300">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
                 
                 <div class="md:w-1/2">
                     <div class="bg-white p-8 rounded-lg shadow-md h-full">
@@ -769,27 +810,6 @@
  
 
     <script>
-        // Auto-rotate hero slider
-        document.addEventListener('DOMContentLoaded', function() {
-            const heroSlider = document.querySelector('[x-data*="currentSlide"]');
-            if (heroSlider) {
-                const sliderData = Alpine.$data(heroSlider);
-                setInterval(() => {
-                    sliderData.currentSlide = (sliderData.currentSlide + 1) % sliderData.slides.length;
-                }, 5000);
-            }
-            
-            // Smooth scrolling for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    document.querySelector(this.getAttribute('href')).scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            });
-        });
-
 // Initialize CSRF token management
 function generateCsrfToken() {
     return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
@@ -805,73 +825,131 @@ function initializeCsrf() {
 }
 
 // Call this when page loads
-initializeCsrf();
-
-// Form submission handler
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+document.addEventListener('DOMContentLoaded', function() {
+    initializeCsrf();
     
-    const form = e.target;
-    const formData = {
-        formType: 'contact',
-        name: form.elements['name'].value,
-        email: form.elements['email'].value,
-        phone: form.elements['phone'].value,
-        message: form.elements['message'].value,
-        website: form.elements['website'].value, // honeypot field
-        csrf_token: form.elements['csrf_token'].value
-    };
-
-    fetch('form-handler.php', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            alert('Message sent successfully!');
-            form.reset();
+    // Form submission handler
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const submitBtn = document.getElementById('submitBtn');
+            const formMessage = document.getElementById('formMessage');
+            
+            // Validate required fields
+            const requiredFields = ['name', 'email', 'phone', 'message'];
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                const input = form.elements[field];
+                if (!input.value.trim()) {
+                    input.classList.add('border-red-500');
+                    isValid = false;
+                } else {
+                    input.classList.remove('border-red-500');
+                }
+            });
+            
+            // Validate email format
+            const email = form.elements['email'].value;
+            if (email && !email.includes('@')) {
+                form.elements['email'].classList.add('border-red-500');
+                isValid = false;
+            }
+            
+            if (!isValid) {
+                showFormMessage('Please fill in all required fields correctly.', 'error');
+                return;
+            }
+            
+            // Prepare form data
+            const formData = {
+                formType: 'contact',
+                name: form.elements['name'].value,
+                email: form.elements['email'].value,
+                phone: form.elements['phone'].value,
+                message: form.elements['message'].value,
+                website: form.elements['website'].value, // honeypot field
+                csrf_token: form.elements['csrf_token'].value
+            };
+            
+            // Change button state
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Sending...';
+            
+            // Clear previous messages
+            formMessage.classList.add('hidden');
+            
+            // Send data
+            fetch('form-handler.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.success) {
+                    showFormMessage('Message sent successfully! We will get back to you soon.', 'success');
+                    form.reset();
+                } else {
+                    showFormMessage(data.message || 'Error sending message. Please try again.', 'error');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                showFormMessage('An error occurred while sending the message. Please try again.', 'error');
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+            });
+        });
+    }
+    
+    // Function to show form messages
+    function showFormMessage(message, type) {
+        const formMessage = document.getElementById('formMessage');
+        formMessage.textContent = message;
+        formMessage.classList.remove('hidden', 'bg-red-100', 'text-red-700', 'bg-green-100', 'text-green-700');
+        
+        if (type === 'error') {
+            formMessage.classList.add('bg-red-100', 'text-red-700');
         } else {
-            alert('Error: ' + data.message);
+            formMessage.classList.add('bg-green-100', 'text-green-700');
         }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('An error occurred while sending the message.');
+        
+        // Scroll to message
+        formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+    
+    // Auto-rotate hero slider
+    const heroSlider = document.querySelector('[x-data*="currentSlide"]');
+    if (heroSlider) {
+        const sliderData = Alpine.$data(heroSlider);
+        setInterval(() => {
+            sliderData.currentSlide = (sliderData.currentSlide + 1) % sliderData.slides.length;
+        }, 5000);
+    }
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
     });
 });
-
-// Add this to the submit handler
-if (!formData.name || !formData.email || !formData.message) {
-    alert('Please fill in all required fields');
-    return;
-}
-
-if (!formData.email.includes('@')) {
-    alert('Please enter a valid email address');
-    return;
-}
-
-const submitBtn = form.querySelector('button[type="submit"]');
-submitBtn.disabled = true;
-submitBtn.textContent = 'Sending...';
-
-// Then in the .finally() of the fetch:
-submitBtn.disabled = false;
-submitBtn.textContent = 'Send Message';
-
-resetAutoRotation() {
-    clearInterval(this.interval);
-    this.startAutoRotation();
-}
-
-
-  
-
-
-    </script>
+</script>
 </body>
 </html>
